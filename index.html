@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+     <a-scene>
+  <a-assets>
+    <img id="menu" crossorigin="" src="https://cdn.glitch.com/61250f0d-0ebc-4bc8-81a9-9015df946ec6%2F11094325_png-for-aframe.png?1499827451320">
+  </a-assets>
+
+<a-image point-at="#player" geometry= "primitive:cylinder; openEnded: true; thetaLength: 100; thetaStart: 125" src="#menu" position= "0 1.5 0" transparent="true" ></a-image>
+  
+      <a-camera> id="player" position="-1 0 0" camera="active:true" rotation="0.172 -127.99 -0.057" userHeight: "1.6" </a-camera>         
+  <a-sky src="https://cdn.glitch.com/61250f0d-0ebc-4bc8-81a9-9015df946ec6%2Fst_lucia_beach_2k.jpg?1499820181434"></a-sky>
+ 
+</a-scene>
+  </body>
+</html>
